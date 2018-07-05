@@ -1,0 +1,217 @@
+// Header
+
+.header
+  padding-bottom: 70px
+  &__small
+    padding-bottom: 0
+
+.header_top
+  padding: 45px 0 55px 0
+  display: flex
+  align-items: center
+  justify-content: space-between
+  &__small
+    padding: 25px 0
+  &__nav
+    ul
+      padding: 0
+      margin: 0
+      display: flex
+      li
+        padding: 0 32px 12px 32px
+        position: relative
+        &:hover
+          transition: $transition
+          .sub-menu
+            z-index: 1
+            opacity: 1
+            visibility: visible
+          a
+            &:before
+              transform: rotate(180deg)
+        a
+          color: $color_dark_green
+          font-family: $opensans_bold
+          font-size: 14px
+          line-height: 28px
+          text-transform: uppercase
+          position: relative
+          transition: $transition
+          &:hover
+            transition: $transition
+            color: $color_blue
+          &:before
+            position: absolute
+            right: -12px
+            top: 8px
+            content: ''
+            background: url("../img/nav_arrow.svg") no-repeat
+            background-size: contain
+            width: 7px
+            height: 5px
+            transition: $transition
+        &:first-child
+          padding-left: 0
+        &:last-child
+          padding-right: 0
+          a
+            &:before
+              display: none
+        .sub-menu
+          position: absolute
+          opacity: 0
+          visibility: hidden
+          z-index: -1
+          padding: 30px 0
+          top: 40px
+          left: -10px
+          flex-direction: column
+          margin: 0
+          width: 230px
+          min-height: 204px
+          box-shadow: 0 0 25px rgba(99, 199, 236, 0.4)
+          background-color: #f0fbff
+          border-radius: 5px
+          transition: $transition
+          &:before
+            position: absolute
+            content: ''
+            top: -10px
+            left: 45%
+            width: 0
+            height: 0
+            border-left: 9px solid transparent
+            border-right: 9px solid transparent
+            border-bottom: 10px solid #f0fbff
+          li
+            padding: 0 20px
+            a
+              margin-bottom: 15px
+              display: flex
+              flex-direction: row-reverse
+              align-items: center
+              justify-content: flex-end
+              color: $color_dark_green
+              font-family: $opensans_regular
+              font-size: 13px
+              text-transform: none
+              position: relative
+              transition: $transition
+              &:hover
+                color: $color_blue
+                transition: $transition
+              img
+                width: 35px
+                height: auto
+                margin-right: 15px
+                order: 1
+              &:before
+                display: none
+
+
+.header_info
+  display: flex
+  align-items: center
+  justify-content: space-between
+  &__img
+    width: 630px
+    max-width: 100%
+  &__item
+    width: 380px
+    max-width: 100%
+    
+.header_item
+  &__title
+    margin-bottom: 40px
+    .title
+      color: $color_dark_green
+      font-family: $futura_bold
+      font-size: 43px
+      line-height: 55px
+  &__text
+    margin-bottom: 47px
+  &__btn
+    a
+      width: 196px
+
+// Mobile menu
+
+.nav_mobile
+  .active
+    right: 15px
+    position: fixed
+    &:before
+      top: 50%
+      transform: rotate(45deg)
+      transition: $transition
+    &:after
+      top: 50%
+      bottom: inherit
+      transform: rotate(135deg)
+      transition: $transition
+  &__icon
+    z-index: 10
+    cursor: pointer
+    position: relative
+    right: 0
+    width: 30px
+    height: 20px
+    &:before
+      position: absolute
+      content: ''
+      top: 0
+      width: 100%
+      height: 2px
+      background-color: $color_dark_green
+      transition: $transition
+    &:after
+      position: absolute
+      content: ''
+      bottom: 0
+      width: 100%
+      height: 2px
+      background-color: $color_dark_green
+      transition: $transition
+  .show
+    right: -30%
+    transition: $transition
+  ul
+    position: fixed
+    right: -200%
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: $color_white
+    display: flex
+    flex-direction: column
+    padding: 30px
+    transition: $transition
+    z-index: 7
+    li
+      padding: 0
+      margin: 0
+      &:before
+        display: none
+      a
+        font-size: 18px
+        color: $color_dark_green
+      .sub-menu
+        position: relative
+        opacity: 1
+        visibility: visible
+        background-color: inherit
+        box-shadow: none
+        min-height: 100%
+        padding: 0 0 0 30px
+        left: 0
+        top: 0
+        &:before
+          display: none
+        li
+          padding: 0
+          a
+            margin-bottom: 5px
+            &:before
+              display: none
+            img
+              display: none

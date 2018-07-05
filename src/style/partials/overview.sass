@@ -1,0 +1,77 @@
+// Overview
+
+.overview
+  padding: 100px 0
+  background-color: #effafe
+
+.tab
+  position: relative
+  overflow: hidden
+  margin: 0 auto 20px auto
+  line-height: 1.5
+  font-weight: 300
+  color: #888
+  -webkit-font-smoothing: antialiased
+
+.tabs 
+  display: flex
+  justify-content: center
+  position: relative
+  overflow: hidden
+  margin: 0
+  width: 100%
+  padding: 0
+  li 
+    float: left
+    line-height: 38px
+    overflow: hidden
+    padding: 0
+    position: relative
+
+  a
+    font-family: $opensans_regular
+    background-color: $color_white
+    border-bottom: 1px solid #fff
+    color: $color_black
+    font-weight: 500
+    display: block
+    letter-spacing: 0
+    outline: none
+    padding: 0 20px
+    text-decoration: none
+    -webkit-transition: all 0.2s ease-in-out
+    -moz-transition: all 0.2s ease-in-out
+    transition: all 0.2s ease-in-out
+    border-bottom: 2px solid $color_blue
+
+.tabs_item 
+  display: none
+  padding: 30px 0
+  .title
+    font-family: $futura_bold
+    color: $color_dark_green
+    font-size: 34px
+    font-weight: 400
+  &:first-child
+    display: block
+  &__info
+    vertical-align: top
+    display: inline-block
+    width: 60%
+    margin-right: 4%
+  &__btn
+    vertical-align: top
+    width: 35%
+    display: inline-block
+    margin-top: 30px
+    a
+      width: 250px
+      max-width: 100%
+    img
+      width: 100%
+      margin-bottom: 30px
+
+.current a 
+  color: #fff
+  background-color: $color_blue
+

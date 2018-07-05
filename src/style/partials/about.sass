@@ -1,0 +1,173 @@
+// About
+
+.about_header
+  height: 500px
+  background-position: center center
+  background-size: cover
+  background-repeat: no-repeat
+  .container
+    height: 100%
+  &__wrapper
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+  &__title
+    margin-bottom: 30px
+    .title
+      color: $color_dark_green
+      font-family: $futura_bold
+      font-size: 55px
+      line-height: 55px
+      text-transform: uppercase
+  &__text
+    width: 900px
+    max-width: 100%
+    margin: 0 auto
+    text-align: center
+
+// Mission
+
+.about_mission
+  padding: 100px 0
+  .container
+    height: 100%
+    position: relative
+  &__img
+    position: absolute
+    top: 5%
+    opacity: 0.2
+    z-index: -1
+  &__wrapper
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+  &__text
+    width: 700px
+    max-width: 100%
+    margin: 0 auto
+    text-align: center
+
+// Experience
+
+.about_exp
+  padding: 100px 0
+  background-color: #effafe
+  &__text
+    width: 1000px
+    max-width: 100%
+    margin: 0 auto 50px auto
+    text-align: center
+  &__team
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+.exp_item
+  margin-bottom: 30px
+  width: 45%
+  display: flex
+  justify-content: space-between
+  &__img
+    width: 20%
+    img
+      width: 100%
+  &__info
+    width: 75%
+
+.exp_item_info
+  &__title
+    margin-bottom: 20px
+    .title
+      font-family: $opensans_bold
+      color: $color_dark_green
+      font-size: 13px
+      text-transform: uppercase
+      font-weight: bold
+  &__text
+    width: 70%
+    max-width: 100%
+    p
+      color: #62676d
+      font-family: $opensans_regular
+      font-size: 13px
+      line-height: 25px
+
+// Join
+
+.about_join
+  height: 500px
+  background-position: center center
+  background-size: cover
+  background-repeat: no-repeat
+  .container
+    height: 100%
+    position: relative
+  &__img
+    position: absolute
+    width: 30%
+    right: 0
+    top: 35%
+    z-index: -1
+    opacity: 0.3
+  &__wrapper
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+  &__text
+    width: 900px
+    max-width: 100%
+    margin: 0 auto
+    text-align: center
+    p
+      padding-bottom: 15px
+    a
+      color: $color_blue
+
+// Question
+
+.about_question
+  background-color: #effafe
+  padding: 100px 0
+  &__text
+    text-align: center
+    margin-bottom: 50px
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+.about_q_item
+  width: 360px
+  max-width: 100%
+  box-shadow: 1px 11px 18px rgba(191,225,237,.45)
+  border-radius: 4px
+  background-color: #fff
+  padding: 34px 15px 38px 15px
+  text-align: center
+  &__icon
+    margin-bottom: 20px
+    i
+      font-size: 50px
+      color: $color_blue
+  &__title
+    margin-bottom: 20px
+    .title
+      color: $color_dark_green
+      font-family: $opensans_bold
+      font-size: 13px
+      line-height: 20px
+      text-transform: uppercase
+  &__text
+    padding: 0 30px
+    margin-bottom: 20px
+    p
+      color: #7e8389
+      font-family: $opensans_regular
+      font-size: 13px
+      line-height: 25px

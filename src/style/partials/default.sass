@@ -1,0 +1,59 @@
+// Default page
+
+.page_content
+  padding: 100px 0
+  .container
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  p
+    color: $color_dark_green
+    font-family: $opensans_regular
+    font-size: 16px
+    line-height: 30px
+  li
+    color: $color_dark_green
+    font-family: $opensans_regular
+    font-size: 16px
+    line-height: 30px
+    list-style: disc
+  h1, h2, h3, h4, h5, h6
+    font-family: $opensans_regular
+  &__info
+    width: 75%
+  .fixed
+    position: fixed
+    top: 10%
+  &__pages
+    width: 20%
+    max-width: 100%
+    ul
+      padding: 0
+      margin: 0
+      li
+        width: 230px
+        max-width: 100%
+        margin-bottom: 10px
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 50px
+        box-shadow: 1px 11px 18px rgba(0, 194, 248, 0.3)
+        border-radius: 4px
+        background-color: rgba(255, 255, 255, 0)
+        border: 1px solid $color_blue
+        text-decoration: none
+        transition: $transition
+        &:hover
+          transition: $transition
+        .selected
+          opacity: 1
+        a
+          opacity: 0.4
+          color: $color_blue
+          font-family: $opensans_bold
+          font-size: 13px
+          line-height: 28px
+          text-transform: uppercase
+
+

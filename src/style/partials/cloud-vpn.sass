@@ -1,0 +1,469 @@
+// Product header
+
+.product_header
+  height: 500px
+  background-position: center center
+  background-size: cover
+  background-repeat: no-repeat
+  .container
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+  &__title
+    margin-bottom: 30px
+    .title
+      color: $color_dark_green
+      font-family: $futura_bold
+      font-size: 55px
+      line-height: 55px
+      text-transform: uppercase
+  &__text
+    ul
+      padding: 0
+    li
+      padding-left: 30px
+      color: $color_dark_green
+      font-family: $opensans_regular
+      font-size: 18px
+      line-height: 30px
+      position: relative
+      &:before
+        position: absolute
+        font-family: FontAwesome
+        content: "\f00c"
+        left: 0
+  &__btn
+    display: flex
+    a
+      width: 200px
+      max-width: 100%
+      height: 50px
+      margin: 0 10px
+
+// Services
+
+.product_services
+  padding: 100px 0
+  &__text
+    text-align: center
+    margin-bottom: 50px
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+.product_s_item
+  width: 360px
+  max-width: 100%
+  margin-bottom: 30px
+  box-shadow: 1px 11px 18px rgba(191,225,237,.45)
+  border-radius: 4px
+  background-color: #fff
+  padding: 34px 15px 38px 15px
+  text-align: center
+  &__icon
+    margin-bottom: 20px
+    i
+      font-size: 50px
+      color: $color_blue
+  &__title
+    margin-bottom: 20px
+    .title
+      color: $color_dark_green
+      font-family: $opensans_bold
+      font-size: 13px
+      line-height: 20px
+      text-transform: uppercase
+  &__text
+    padding: 0 30px
+    margin-bottom: 20px
+    p
+      color: #7e8389
+      font-family: $opensans_regular
+      font-size: 13px
+      line-height: 25px
+
+// Product use
+
+.product_use
+  padding: 100px 0
+  background-color: #effafe
+  position: relative
+  &__text
+    width: 900px
+    max-width: 100%
+    margin: 0 auto
+    text-align: center
+    .title
+      margin-bottom: 20px
+    ul
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      li
+        width: 45%
+        margin-bottom: 20px
+  &__img
+    position: absolute
+    right: 0
+    top: 30%
+    opacity: 0.3
+    z-index: 0
+    img
+      width: 40%
+
+// Product secure
+
+.product_secure
+  padding: 100px 0
+  .container
+    position: relative
+  &__img
+    position: absolute
+    z-index: -1
+    opacity: 0.3
+    top: 35%
+    width: 20%
+  &__text
+    text-align: center
+    width: 900px
+    max-width: 100%
+    margin: 0 auto 50px auto
+  &__btn
+    a
+      width: 200px
+      max-width: 100%
+      margin: 0 auto
+
+// Product access
+
+.product_access
+  padding: 100px 0
+  border-top: 1px solid #ddd
+  .container
+    position: relative
+  &__img
+    position: absolute
+    z-index: -1
+    opacity: 0.3
+    top: 35%
+    right: 0
+    width: 20%
+  &__text
+    text-align: center
+    width: 900px
+    max-width: 100%
+    margin: 0 auto 50px auto
+
+// Product privacy
+
+.product_privacy
+  padding: 100px 0
+  background-color: #effafe
+  .container
+    position: relative
+  &__img
+    position: absolute
+    z-index: 0
+    opacity: 0.3
+    top: 35%
+    width: 20%
+  &__text
+    text-align: center
+    width: 900px
+    max-width: 100%
+    margin: 0 auto 50px auto
+  &__btn
+    a
+      width: 200px
+      max-width: 100%
+      margin: 0 auto
+
+// Product power
+
+.product_power
+  padding: 100px 0
+  &__text
+    text-align: center
+    margin-bottom: 50px
+  &__wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+
+.product_p_item
+  width: 23%
+  max-width: 100%
+  min-height: 200px
+  box-shadow: 1px 11px 18px rgba(191,225,237,.45)
+  border-radius: 4px
+  background-color: #fff
+  padding: 34px 15px 38px 15px
+  text-align: center
+  &__icon
+    min-height: 40px
+    margin-bottom: 20px
+    i
+      font-size: 50px
+      color: $color_blue
+  &__title
+    margin-bottom: 20px
+    .title
+      color: $color_dark_green
+      font-family: $opensans_bold
+      font-size: 13px
+      line-height: 20px
+      text-transform: uppercase
+  &__text
+    margin-bottom: 20px
+    p
+      color: #7e8389
+      font-family: $opensans_regular
+      font-size: 13px
+      line-height: 25px
+
+// Product pack
+
+.product_pack
+  padding: 100px 0
+  background-color: #effafe
+  &__text
+    margin-bottom: 50px
+    text-align: center
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+.product_pack_item
+  width: 45%
+  margin-bottom: 20px
+  max-width: 100%
+  box-shadow: 1px 11px 18px rgba(191,225,237,.45)
+  border-radius: 4px
+  background-color: #fff
+  padding: 34px 15px 38px 15px
+  text-align: center
+  &__title
+    margin-bottom: 20px
+    .title
+      color: $color_dark_green
+      font-family: $opensans_bold
+      font-size: 13px
+      line-height: 20px
+      text-transform: uppercase
+  &__text
+    min-height: 180px
+    margin-bottom: 20px
+    p
+      color: #7e8389
+      font-family: $opensans_regular
+      font-size: 13px
+      line-height: 25px
+    ul
+      padding: 0
+      li
+        text-align: left
+        padding-left: 30px
+        color: #7e8389
+        font-family: $opensans_regular
+        font-size: 13px
+        line-height: 25px
+        position: relative
+        &:before
+          position: absolute
+          font-family: FontAwesome
+          content: "\f00c"
+          left: 0
+  &__btn
+    width: 200px
+    max-width: 100%
+    margin: 0 auto
+
+// Product reviews
+
+.product_reviews
+  padding: 100px 0
+  background-color: #effafe
+  &__text
+    margin-bottom: 50px
+    text-align: center
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+.product_r_item
+  width: 360px
+  max-width: 100%
+  box-shadow: 1px 11px 18px rgba(191,225,237,.45)
+  border-radius: 4px
+  background-color: #fff
+  padding: 34px 15px 38px 15px
+  text-align: center
+  &__icon
+    margin-bottom: 20px
+    img
+      font-size: 50px
+      color: $color_blue
+  &__title
+    margin-bottom: 20px
+    .title
+      color: $color_dark_green
+      font-family: $opensans_bold
+      font-size: 13px
+      line-height: 20px
+      text-transform: uppercase
+  &__text
+    padding: 0 30px
+    margin-bottom: 20px
+    p
+      color: #7e8389
+      font-family: $opensans_regular
+      font-size: 13px
+      line-height: 25px
+
+// Get started
+
+.product_started
+  padding: 100px 0
+  background-color: #effafe
+  position: relative
+  &__text
+    margin-bottom: 50px
+    text-align: center
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  &__btn
+    a
+      width: 200px
+      margin: 0 auto
+  &__img
+    position: absolute
+    z-index: 0
+    opacity: 0.3
+    top: 20%
+    width: 13%
+
+.product_pack
+  padding: 100px 0
+  background-color: #effafe
+  position: relative
+  &__wrapper
+    display: flex
+    justify-content: center
+
+.pack_item
+  margin: 0 30px 20px 30px
+  width: 40%
+  max-width: 100%
+  box-shadow: 1px 11px 18px rgba(191,225,237,.45)
+  border-radius: 4px
+  background-color: #fff
+  padding: 34px 15px 38px 15px
+  text-align: center
+  &__title
+    color: $color_dark_green
+    font-family: $futura_bold
+    font-size: 19px
+    line-height: 30px
+    margin-bottom: 35px
+    text-transform: uppercase
+  &__text
+    margin-bottom: 50px
+    text-align: center
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  &__btn
+    margin-bottom: 20px
+    a
+      width: 200px
+      margin: 0 auto
+  &__price
+    color: $color_dark_green
+    font-family: $opensans_regular
+    font-size: 13px
+    line-height: 30px
+
+.product_tab
+  background-color: #effafe
+  padding: 100px 0
+  &__text
+    margin-bottom: 50px
+    text-align: center
+
+// Monitoring
+
+.monitoring
+  padding: 100px 0
+
+.monitoring_item
+  padding: 50px  25px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  &:nth-child(odd)
+    background-color: #effafe
+  &__title
+    width: 47%
+    .title
+      color: $color_dark_green
+      font-family: $futura_bold
+      font-size: 34px
+      line-height: 55px
+  &__text
+    width: 47%
+
+// Sales
+
+.sales_text
+  .p_text
+    text-align: left
+    h3
+      font-family: $futura_bold
+      font-size: 34px
+      line-height: 55px
+    p
+      margin-bottom: 20px
+
+// Locations
+
+.countries_item
+    &__top
+      display: flex
+      flex-wrap: wrap
+      align-items: center
+      padding-bottom: 20px
+      .title
+        color: $color_dark_green!important
+        margin-right: 20px
+        position: relative
+    ul
+      border-top: 1px solid $color_dark_green
+      width: 100%
+      padding: 20px 0
+      margin: 0
+      display: flex
+      justify-content: flex-start
+      flex-wrap: wrap
+      li
+        width: 23%
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        font-family: $opensans_regular
+        font-size: 13px
+        img
+          margin-right: 20px
+        span
+          width: 150px
+          background: $color_white
+          text-align: center
+

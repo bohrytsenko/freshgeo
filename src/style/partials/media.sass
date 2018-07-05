@@ -1,0 +1,133 @@
+$r-768: 768px
+$r-992: 992px
+$r-1024: 1024px
+$r-1200: 1200px
+
+body
+  // break max-768
+  @media only screen and (max-width: $r-768 - 1)
+    .show_mobile
+      display: block
+    .show_desctop
+      display: none
+    .body_bg
+      background-image: none
+    .header_nav
+      display: none
+    .header_info
+      flex-direction: column
+      &__img
+        width: 100% !important
+    .about_item,
+    .products_item,
+    .contacts_form,
+    .contacts_logo
+      width: 100% !important
+
+    .contacts_form
+      margin-bottom: 30px
+
+    .footer__wrapper
+      flex-direction: column
+
+    .footer_item
+      width: 100%
+      &:first-child
+        width: 100%
+        margin-bottom: 30px
+      &:nth-of-type(2)
+        width: 100%
+        flex-direction: column
+    .socials
+      width: 50%
+
+    .about_header__title .title
+      font-size: 40px
+    .contact_form form
+      width: 100%
+      padding: 25px
+    .footer_nav
+      flex-wrap: wrap
+      &__item
+        width: 100%
+        margin-bottom: 20px
+    .footer_item__copyright
+      margin-top: 0
+      ul
+        margin-bottom: 20px
+        flex-direction: column
+        align-items: flex-start
+        li
+          margin: 0
+      p
+        text-align: center
+    .header_top__nav ul li a:before
+      display: none
+    .product_use__text ul li
+      width: 100%
+    .s_title
+      font-size: 24px
+      line-height: 36px
+    .product_p_item
+      width: 100%
+      margin-bottom: 30px
+    .pack_item
+      width: 100%
+      margin: 0 0 30px 0
+    .product_p_item
+      width: 100%
+      margin-bottom: 30px
+    .exp_item
+      width: 100%
+      margin-bottom: 30px
+    .about_q_item
+      margin-bottom: 30px
+    .tabs
+      flex-direction: column
+    .tabs_item
+      &__info,
+      &__btn
+        width: 100%
+    .product_header__title .title
+      font-size: 40px
+    .monitoring_item
+      flex-direction: column
+      &__title
+        width: 100%
+        margin-bottom: 20px
+        .title
+          font-size: 24px
+          line-height: 36px
+      &__text
+        width: 100%
+    .countries_item ul li
+      width: 50%
+      margin-bottom: 10px
+    .contact_form
+      padding: 50px 15px
+    .error
+      &__text
+        span
+          left: 0
+
+  // break max-1024
+  @media only screen and (max-width: $r-1024 - 1)
+    .about_item,
+    .products_item
+      width: 310px
+      margin-bottom: 25px
+    .header_info__img,
+    .contacts_logo
+      width: 45%
+
+    .contacts_form
+      width: 50%
+      padding: 55px 20px
+
+    .logo_list__item
+      width: 40%
+
+  // break max-1200
+  @media only screen and (max-width: $r-1200 - 1)
+    .container
+      padding: 0 15px
